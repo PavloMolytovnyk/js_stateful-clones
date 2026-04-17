@@ -31,8 +31,9 @@ function transformStateWithClones(state, actions) {
         currentState = {};
         break;
 
-      default:
-        break;
+      default: {
+        return `Unknown action type: "${action.type}". Check your actions array.`;
+      }
     }
 
     history.push({ ...currentState });
