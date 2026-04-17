@@ -8,7 +8,6 @@
  */
 function transformStateWithClones(state, actions) {
   const history = [];
-  // Створюємо змінну для відстеження поточного стану, починаючи з початкового
   let currentState = { ...state };
 
   for (const action of actions) {
